@@ -42,3 +42,9 @@ Pour tester le tout avec POSTMAN, il faut ajouter cette ligne pour pouvoir déma
 
    -> **Visualiser dans la nouvelle liste**  
    ![alt text](image-13.png)
+
+6. **Récupération user api externe avec axios**
+![alt text](image-14.png)
+
+   -> **Visualiser résultat avec Postman**
+   ![alt text](image-15.png)

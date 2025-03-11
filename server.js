@@ -1,4 +1,5 @@
 const express = require('express');
+const axios =require('axios');
 const app = express();
 app.use(express.json());
 
@@ -48,6 +49,17 @@ app.delete('/api/users/:id', (req, res) => {
     users.splice(userById, 1);
     res.status(204).send();
   });
+
+
+app.get('/api/users/:id/details', async (req, res) => {
+  try {
+    const response = await axios.get(`https://jsonplaceholder.typicode.com/users/${parseInt(req.params.id)}`);
+    res.json(response.data);
+  } catch (error) {
+    console.error(error);
+    res.status(500).send('Erreur lors de la récupération des détails');
+  }
+});
 
 
   const port = 5000;
