@@ -1,7 +1,7 @@
 # Node-Express
 
 ## Installation de EXPRESS et de AXIOS
-![alt text](image.png)
+![alt text](captures/image.png)
 
 ## Définir le tableau d'utilisateurs et les routes CRUD
 ![alt text](image-1.png)
